@@ -7,8 +7,6 @@ import ttk
 Config = ConfigParser.ConfigParser()
 parse = ConfigParser.SafeConfigParser()
 parse.read('./cnf.ini')
-#color = parse.get('theme', 'choice')
-#layout = parse.get('theme', 'layout')
 
 class Win(tk.Frame):
     """
@@ -21,9 +19,6 @@ class Win(tk.Frame):
 
         self.mainf = tk.Frame(master, height=200, width=200, pady=50, padx=50)
         self.mainf.grid(row=0, column=0)
-
-        #color = parse.get('theme', 'choice')
-
 
         self.colour_btns()
         self.theme_btns()
